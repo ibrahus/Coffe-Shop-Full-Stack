@@ -20,7 +20,7 @@ CORS(app)
 
 # ROUTES
 
-
+# Endpoint to get all drinks
 @app.route('/drinks')
 def retrieve_drinks():
     selection = Drink.query.order_by(Drink.id).all()
@@ -33,7 +33,7 @@ def retrieve_drinks():
         'drinks': drinks,
     })
 
-
+# Endpoint to get all drinks details with get:drinks-detail permission
 @app.route('/drinks-detail')
 @requires_auth('get:drinks-detail')
 def retrieve_drinks_detail(payload):
@@ -47,7 +47,7 @@ def retrieve_drinks_detail(payload):
         'drinks': drinks,
     })
 
-
+# Endpoint to add new drink with post:drinks permission
 @app.route('/drinks', methods=['POST'])
 @requires_auth('post:drinks')
 def create_drinks(payload):
@@ -66,7 +66,7 @@ def create_drinks(payload):
     except:
         abort(500)
 
-
+# Endpoint to update a drink with patch:drinks permission
 @app.route('/drinks/<int:id>', methods=['PATCH'])
 @requires_auth('patch:drinks')
 def update_drinks(payload, id):
@@ -89,7 +89,7 @@ def update_drinks(payload, id):
         'drinks': [drink.long()]
     })
 
-
+# Endpoint to delete a drink with delete:drinks permission
 @app.route('/drinks/<int:id>', methods=['DELETE'])
 @requires_auth('delete:drinks')
 def delete_drinks(payload, id):
@@ -104,7 +104,6 @@ def delete_drinks(payload, id):
         'delete': drink.id
     })
 
-
 # Error Handling
 
 @app.errorhandler(422)
@@ -115,7 +114,6 @@ def unprocessable(error):
         "message": "unprocessable"
     }), 422
 
-
 @app.errorhandler(404)
 def not_found(error):
     return jsonify({
@@ -124,7 +122,6 @@ def not_found(error):
         "message": "resource not found"
     }), 404
 
-
 @app.errorhandler(400)
 def bad_request(error):
     return jsonify({
@@ -132,7 +129,6 @@ def bad_request(error):
         "error": 400,
         "message": "bad request"
     }), 400
-
 
 @app.errorhandler(500)
 def internal_error(error):
