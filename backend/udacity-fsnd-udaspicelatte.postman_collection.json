@@ -519,7 +519,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Water3\",\n    \"recipe\": {\n        \"name\": \"Water\",\n        \"color\": \"blue\",\n        \"parts\": 1\n    }\n}"
+							"raw": "{\n    \"title\": \"Black Coffe\",\n    \"recipe\": [{\n        \"name\": \"Coffe\",\n        \"color\": \"Black\",\n        \"parts\": 1\n    }]\n}"
 						},
 						"url": {
 							"raw": "{{host}}/drinks",
@@ -691,11 +691,11 @@
 		},
 		{
 			"key": "barista_token",
-			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNNZGlSY2JhSm1udldXb0RidTgyYyJ9.eyJpc3MiOiJodHRwczovL2licmEtZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEwMTFkNjZjNzI0MDUwMDcxYjVhNDdkIiwiYXVkIjoiRlNORC1BUEkiLCJpYXQiOjE2Mjc0ODY2NTYsImV4cCI6MTYyNzQ5Mzg1NiwiYXpwIjoieGZDcVlaSkNlaExGaE45ZGJqN1Z3SHhSZHYzdFZuUUUiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpkcmlua3MtZGV0YWlsIl19.bLCXHtOMwcMhz8gU7YJ1AOqYyeN0bwdD5XM5OivQaRcVZ-8PBPGOoaPq4sIpdJM8SZ0wWh8KEAA423EKP1dHMkM7DCzKkc7zy3c-A8RvHfvf64ByGA8znkXk3OcoOjQybODtNeyBxBONkFzl3FM5EWOL4wveWJi9CYzcwZRLAba1Lq2S4rKCnlwU3-bcxbhMUjXWXLNc3SXq8ev5h007aE-cJUs3DzuvzlhzLmPNNLDIJazRDzSanNUivVfEA-VAaMpeh04DADBtnDRyEIJaJsqoBaSKRAq-oUsjFlyE_lwOfEDJ8UafQEwYUoHyw1NEwcZ2gUOmJJwRvtfn_Vm9ew"
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNNZGlSY2JhSm1udldXb0RidTgyYyJ9.eyJpc3MiOiJodHRwczovL2licmEtZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEwMTFkNjZjNzI0MDUwMDcxYjVhNDdkIiwiYXVkIjoiRlNORC1BUEkiLCJpYXQiOjE2Mjc2NTg5NjMsImV4cCI6MTYyNzY2NjE2MywiYXpwIjoieGZDcVlaSkNlaExGaE45ZGJqN1Z3SHhSZHYzdFZuUUUiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpkcmlua3MtZGV0YWlsIl19.W3NK7m-2hgFwy37PFY0MXi5qHrom3ubwmGvszu5nMPcsiWzuGGd2KLcdRCr4WmzNws1Z1-m3bvacx4ieS-foLyBGJ9PZUoemgNXYmWOiU7RFuMo-MYGYVEO31OWOwtE5DLJQ8s-tdDxrSxAL90OkvFfut4Pg1UqvK7qN-MU1_iXabxNxJuF4mbaBnYl9VXf6KCuSxhkRvITzd7X7CjyGZSW9R3BpcTQPxvz6YjlrWRU92KLCgE97m6mdz7pQwPlFB4YowZ_UNX0sSKdP_svSLf-CO92l9jVc2uaX9quYVt7M0Otm_5sKFgawBf3HptFqxwLO8kQD86SmBAkk4ypzWg"
 		},
 		{
 			"key": "manager_token",
-			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNNZGlSY2JhSm1udldXb0RidTgyYyJ9.eyJpc3MiOiJodHRwczovL2licmEtZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEwMTQyOWEwZGRlMDEwMDY4OTE1NWFiIiwiYXVkIjoiRlNORC1BUEkiLCJpYXQiOjE2Mjc1NDA1ODksImV4cCI6MTYyNzU0Nzc4OSwiYXpwIjoieGZDcVlaSkNlaExGaE45ZGJqN1Z3SHhSZHYzdFZuUUUiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTpkcmlua3MiLCJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiLCJwYXRjaDpkcmlua3MiLCJwb3N0OmRyaW5rcyJdfQ.lPzp5lyer2m-f45WsB2qhFEaumxOmfmI7z4mTphTezSnUSvpF_BfX88ySgBMy9CxpTE2B-tx5RnQxo4IudbDkzG9OTcZeqv3TPmi2eOaFOswXNqGeUBty6wnhzcR1CdZV0he4VybkyvTyIPAEaJq_xPNjb2kfbyW-7mcnFmxHTP2d-JgAeHbNUtaS7dsOKF30JlF3ypCZRLBY4LeyJKAl1RZmgNNKF3OCMkS94EmYW5-iJgi5pr6sFkAzVjxbcjvb0rovj_sLi3ETSz1I9lAdhlWba6SrNTc5Bx6bRlTmN8myI-AwIS-KZbvR3jeOQZTsbK8MlfLvZHdeOwXaGBePg"
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNNZGlSY2JhSm1udldXb0RidTgyYyJ9.eyJpc3MiOiJodHRwczovL2licmEtZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEwMTQyOWEwZGRlMDEwMDY4OTE1NWFiIiwiYXVkIjoiRlNORC1BUEkiLCJpYXQiOjE2Mjc2NTg4MjIsImV4cCI6MTYyNzY2NjAyMiwiYXpwIjoieGZDcVlaSkNlaExGaE45ZGJqN1Z3SHhSZHYzdFZuUUUiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTpkcmlua3MiLCJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiLCJwYXRjaDpkcmlua3MiLCJwb3N0OmRyaW5rcyJdfQ.aD1EP_IambIMEnf7MaNNQF3eg35vJzcttzoBfZvfn8YFMMUynuRA6cNzxmUYp2XW45CzadQHJSboFDwFy4ooY4jWnJMfMXhHKX6yridwxdRBrOG88TVg5Rb_LEwQcNnfdx1X6LkxESF5B1SaPKdRzM118J6ObBtzb6fEZeeW62ZXEIjmLQ4o4GyfD7e8dgQvvCq-9uBdu_dykIU-1xeV0gn5KEoUmsAzadCzU4kVU9--QGe4NWmG4cQNrmsPCouhVTcfCoRpnzeuTblq9sFhL5n7KqfTsV8U2YwEZ4s7J5pnLEj-EGSCKFQhhIk_ss2o9o2hTlhwh7GbRvqmzNEZmg"
 		}
 	]
 }
